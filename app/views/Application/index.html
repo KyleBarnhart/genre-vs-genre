@@ -1,0 +1,47 @@
+#{extends 'main.html' /}
+#{set title:'Genre vs. Genre' /}
+
+#{set 'moreScripts'}
+	#{script 'jquery.rdio.min.js'/}
+	#{script 'heloworld.js'/}
+#{/set}
+
+<div class="songDiv">
+	<div class="summary1">
+		<p><b>Track</b><br>${tracks[0].name}</p>
+		<p><b>Album</b><br>${tracks[0].album}</p>
+		<p><b>Artist</b><br>${tracks[0].artist}</p>
+		<p><b>Genre</b><br>${tracks[0].genre}</p>
+   		<button class="playSong" data-key="${tracks[0].id}" data-duration="${tracks[0].duration}">Stop</button><br>
+   		<button class="pick" data-genre="${tracks[0].genre}">I Like This</button>
+   	</div>
+   	<div>
+		<img id="art" src="${tracks[0].albumImageUrl}" height="200" width="200">
+	</div>
+	<div class="vs">
+		V<br>S
+	</div>
+	<div>
+   		<img id="art" src="${tracks[1].albumImageUrl}" height="200" width="200">
+   	</div>
+   	<div class="summary2">
+		<p><b>Track</b><br>${tracks[1].name}</p>
+		<p><b>Album</b><br>${tracks[1].album}</p>
+		<p><b>Artist</b><br>${tracks[1].artist}</p>
+		<p><b>Genre</b><br>${tracks[1].genre}</p>
+   		<button class="playSong" data-key="${tracks[1].id}" data-duration="${tracks[1].duration}">Play</button><br>
+   		<button class="pick" data-genre="${tracks[1].genre}">I Like This</button>
+   	</div>
+</div>
+
+<div class="controlDiv">       
+	<div id="api"></div>
+	<p><b>Position</b></p>
+	<span id="positionBox" style="display:inline-block;width:200px;border:1px solid black;">
+		<span id="position" style="display:inline-block;background-color:#666">&nbsp;</span>
+	</span>
+</div>
+
+
+
+

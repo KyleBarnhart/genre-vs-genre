@@ -1,0 +1,39 @@
+h1 {
+	display:inline;
+}
+p, span {
+	margin: 5px;
+	boarder: 0px;
+	padding: 0px;
+}
+.pick {
+	font-size: 20px;
+}
+div {
+	float: left;
+}
+div.summary1 {
+    width: 300px;
+    text-align:right;
+}
+div.summary2 {
+    width: 300px;
+    text-align:left;
+}
+div.vs {
+	margin-top:50px;
+	font-size: 40px;
+	text-align: center;
+}
+div.songDiv {
+	position: absolute;
+	margin: 0px 0 0 -515px;
+	left: 50%;
+}
+div.controlDiv {
+	position: absolute;
+	margin: 0px 0 0 -106px;
+	left: 50%;
+	top: 225px;
+	text-align: center;
+}
